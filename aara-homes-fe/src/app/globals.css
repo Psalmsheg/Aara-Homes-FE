@@ -1,4 +1,5 @@
-@import url('https://fonts.cdnfonts.com/css/satoshi');
+@import url('https://fonts.cdnfonts.com/css/georgia-pro-cond');
+@import url('https://fonts.cdnfonts.com/css/inter');
 
 input{
   font-size: 18px;
@@ -6,5 +7,9 @@ input{
 
 *{
   scroll-behavior: smooth;
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Inter', 'Georgia Pro Cond';
+}
+
+.img_container {
+  width: 100% !important;
 }

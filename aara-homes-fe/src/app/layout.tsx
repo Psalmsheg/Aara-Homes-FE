@@ -7,10 +7,10 @@ import ClientSetup from "./components/ClientSetup";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Smooth-Ballot",
-  description: "Smooth",
+  title: "AaraHomes",
+  description: "AaraHomes",
   icons:{
-    icon: "/smoothBallotLogoLight.jpg",
+    icon: "/",
   }
 };
 

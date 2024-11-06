@@ -2,7 +2,7 @@ import { Box } from '@chakra-ui/react';
 
 const Wrapper = ({ children } : IWrapper) => {
   return(
-    <Box width={{lg:"63%", base: "92%"}}  margin="0 auto">
+    <Box width={{lg:"85%", base: "92%"}}  margin="0 auto">
         {children}
     </Box>
   ) ;

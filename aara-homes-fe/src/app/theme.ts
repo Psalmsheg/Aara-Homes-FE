@@ -21,10 +21,19 @@ export const theme = extendTheme({
 
     colors:{
         brand:{
-            primary: "#0654B0",
+            primary: "#CCA01D",
             secondary: "#f1b900",
             typography: "#212121"
         }
-    }
+    },
+
+    Button: {
+        baseStyle: {
+          _hover: {
+            bg: "none", 
+            boxShadow: "none",
+          },
+        },
+      },
 
 });
