@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "AaraHomes",
   description: "AaraHomes",
   icons:{
-    icon: "/",
+    icon: "/aara",
   }
 };
 

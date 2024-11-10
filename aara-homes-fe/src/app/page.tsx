@@ -7,6 +7,9 @@ import { Box, Flex, FormControl, FormLabel, Input, InputGroup, InputRightElement
 import Link from "next/link";
 import { ArrowForwardIcon, ChevronRightIcon, Search2Icon } from "@chakra-ui/icons";
 import { Typewriter } from 'react-simple-typewriter';
+import Footer from "./components/footer";
+
+
 
 
 
@@ -30,7 +33,7 @@ export default function LandingPage() {
     { id: 6, title: "Nirvana House", image: "/card-img.png", location: "1234 Elm Street, Los Angeles, CA 90012", price: "$76,000,000", bedrooms: "4 bedrooms", bathrooms: "4 bathrooms", sqft: "6,500 Sq Ft" }
   ];
 
-  const currentYear = new Date().getFullYear();
+  // const currentYear = new Date().getFullYear();
 
 
 
@@ -49,7 +52,7 @@ export default function LandingPage() {
               <Text fontSize={"15px"} fontWeight={"500"} color={"brand.primary"} cursor={"pointer"} onClick={() => location.replace("/")}>Agents</Text>
               <Text fontSize={"15px"} fontWeight={"500"} color={"brand.primary"} cursor={"pointer"} onClick={() => location.replace("/")}>Contact</Text>
               <Text fontSize={"15px"} fontWeight={"500"} color={"brand.primary"} cursor={"pointer"} onClick={() => location.replace("/")}>AaraBlogs</Text>
-              <Button leftIcon={<Search2Icon/>} borderRadius={"30px"} borderColor={"brand.primary"} color={"brand.primary"} fontWeight={"600"} px={"1.5em"} _hover={{ bg: "none", borderColor: "none" }} variant={"outline"}>Search</Button>
+              <Button leftIcon={<Search2Icon/>} borderRadius={"30px"} borderColor={"brand.primary"} color={"brand.primary"} fontWeight={"600"} px={"2em"} _hover={{ bg: "none", borderColor: "none" }} variant={"outline"}>Search</Button>
             </HStack>
           </Box>
 
@@ -63,10 +66,10 @@ export default function LandingPage() {
       </Wrapper>
 
       <Box width={"100%"} position={"relative"}>
-        <Image src="/hero-img.png" alt="hero-img" width={"100%"} height={"90vh"} opacity={"0.5"}/>
+        <Image src="/hero-img.png" alt="hero-img" width={"100%"} height={"95vh"} opacity={"0.5"}/>
 
-        <Box position={"absolute"} top={"220"} ml={"20em"}>
-          <Text fontFamily={"Georgia Pro Cond"} fontWeight={"700"} fontSize={"55px"} color={"#FFFFF0"} >Welcome to <chakra.span color={"brand.primary"} fontFamily={"Georgia Pro Cond"}><Typewriter
+        <Box position={"absolute"} top={"180"} ml={"20em"}>
+          <Text fontFamily={"Georgia"} fontWeight={"700"} fontSize={"55px"} color={"#FFFFF0"} >Welcome to <chakra.span color={"brand.primary"} fontFamily={"Georgia"}><Typewriter
             words={['AaraHomes']}
             loop={true}
             cursor
@@ -76,11 +79,13 @@ export default function LandingPage() {
             </Text>
         </Box>
 
-        <Box position={"absolute"} top={"320"} ml={"15em"}>
+        <Box position={"absolute"} top={"280"} ml={"15em"}>
           <Text fontWeight={"400"} fontSize={"22px"} color={"#FFFFF0"} textAlign={"center"}>AaraHomes is a forward-thinking real estate company dedicated to crafting<br/>exceptional living expenses.</Text>
+
+          <Button ml={"20em"} mt={"4em"} borderRadius={"30px"} borderColor={"fff"} color={"#fff"} fontWeight={"600"} px={"2.5em"} _hover={{ bg: "none", borderColor: "none" }} variant={"outline"} fontFamily={"Georgia"}>View Properties</Button>
         </Box>
 
-        <HStack position={"absolute"} top={"465"} right={"30"}>
+        <HStack position={"absolute"} top={"490"} right={"30"}>
           <Box bgColor={"brand.primary"} borderRadius={"50%"} height={"40px"} width={"40px"} cursor={"pointer"}><Image src="/icons8-message-50 1.png" height={"20px"} width={"20px"} mt={".6em"} ml={".65em"}/></Box>
 
           <VStack mt={"2em"}>
@@ -214,58 +219,7 @@ export default function LandingPage() {
 
       {/* Footer section */}
 
-      <Box height={"500px"} bgColor={"#0F0F0F"}>
-        <Wrapper>
-          <Flex justifyContent={"space-between"} my={"4em"} borderBottom={"1px solid #CCA01D"}>
-            <Box mb={"3em"}>
-              <Text fontSize={"24px"} color={"#FFFFFF"} fontWeight={"500"} pb={".5em"}>AaraHomes</Text>
-              <Text fontSize={"14px"} color={"#FFFFFF"} fontWeight={"300"} maxW={"500px"}>Our primary focus is on enhancing the customer journey in day-to-day management, with services tailored to each client. We devote special attention to unique needs and requirements, helping thousands of clients achieve their homeownership goals, establish successful businesses, and maximize returns on investment.</Text>
-            </Box>
-
-            <Box>
-              <Text fontSize={"24px"} color={"#FFFFFF"} fontWeight={"500"} pb={".5em"}>Discover</Text>
-
-              <HStack>
-                <ChevronRightIcon color={"#FFFFFF"}/>
-                <Link href={"/properties"}>
-                  <Text fontSize={"14px"} color={"#FFFFFF"} fontWeight={"300"}>Properties</Text>
-                </Link>
-              </HStack>
-
-              <HStack>
-                <ChevronRightIcon  color={"#FFFFFF"}/>
-                <Link href={"/agents"}>
-                  <Text fontSize={"14px"} color={"#FFFFFF"} fontWeight={"300"}>Agents</Text>
-                </Link>
-              </HStack>
-
-              <HStack>
-                <ChevronRightIcon  color={"#FFFFFF"}/>
-                <Link href={"/about-us"}>
-                  <Text fontSize={"14px"} color={"#FFFFFF"} fontWeight={"300"}>About Us</Text>
-                </Link>
-              </HStack>
-
-              <HStack>
-                <ChevronRightIcon  color={"#FFFFFF"}/>
-                <Link href={"/blogs"}>
-                  <Text fontSize={"14px"} color={"#FFFFFF"} fontWeight={"300"}>Blogs</Text>
-                </Link>
-              </HStack>
-
-              <HStack>
-                <ChevronRightIcon  color={"#FFFFFF"}/>
-                <Link href={"/contact"}>
-                  <Text fontSize={"14px"} color={"#FFFFFF"} fontWeight={"300"}>Contact</Text>
-                </Link>
-              </HStack>
-              </Box>
-
-              <Text fontSize={"14px"} color={"#7c8289"} textAlign={{smd:"left", base:"center"}}> © AaraHomes {currentYear}. All rights reserved.</Text>
-
-          </Flex>
-        </Wrapper>
-      </Box>  
+        <Footer />
     
     </Box>
   );
