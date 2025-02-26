@@ -15,6 +15,7 @@ import Footer from "./components/footer";
 
 
 
+
   
 export default function LandingPage() {
 
@@ -33,8 +34,6 @@ export default function LandingPage() {
     { id: 6, title: "Nirvana House", image: "/card-img.png", location: "1234 Elm Street, Los Angeles, CA 90012", price: "$76,000,000", bedrooms: "4 bedrooms", bathrooms: "4 bathrooms", sqft: "6,500 Sq Ft" }
   ];
 
-  // const currentYear = new Date().getFullYear();
-
 
 
   return (
@@ -42,7 +41,7 @@ export default function LandingPage() {
       <Wrapper>
         <Flex justifyContent={"space-between"} py={"1em"}>
           <Box>
-            <Text fontSize={"20px"} fontWeight={"700"} color={"brand.primary"}>AaraHomes</Text>
+            <Text fontSize={"20px"} fontWeight={"700"} color={"brand.primary"} onClick={()=> location.replace("/")} cursor={"pointer"}>AaraHomes</Text>
           </Box>
 
           <Box>
@@ -177,7 +176,7 @@ export default function LandingPage() {
               </Text>
             </Box>
 
-            <Button fontWeight={"400"} fontSize={"12px"} color={"#FFFFFF"} width={"90%"} variant={"outline"} _hover={{ bg: "none"}} borderColor={"brand.primary"} rightIcon={<ArrowForwardIcon ml={"1em"}/>} borderRadius={"0px"}>FIND OUT MORE</Button>
+            <Button fontWeight={"400"} fontSize={"12px"} color={"#FFFFFF"} width={"90%"} variant={"outline"} _hover={{ bg: "none"}} borderColor={"brand.primary"} rightIcon={<ArrowForwardIcon ml={"1em"}/>} borderRadius={"0px"} onClick={() => location.replace("/leaders-corner")}>FIND OUT MORE</Button>
           </Card>
 
           <Card maxW='sm' borderRadius={"0px"} bgColor={"#0F0F0F"}>

@@ -34,7 +34,7 @@ export default function AboutUs() {
       <Wrapper>
         <Flex justifyContent={"space-between"} py={"1em"}>
           <Box>
-            <Text fontSize={"20px"} fontWeight={"700"} color={"brand.primary"}>AaraHomes</Text>
+            <Text fontSize={"20px"} fontWeight={"700"} color={"brand.primary"} onClick={()=> location.replace("/")} cursor={"pointer"}>AaraHomes</Text>
           </Box>
 
           <Box>
@@ -71,23 +71,28 @@ export default function AboutUs() {
 
       <Box height={"900px"} bgColor={"brand.primary"}>
         <Wrapper>
-            <Text fontSize={"28px"} textAlign={"center"} fontFamily={"Georgia"} fontWeight={"700"} py={"2em"}>OUR SERVICES</Text>
-
+          <Text fontSize={"30px"} textAlign={"center"} fontFamily={"Georgia"} fontWeight={"700"} py={"2em"}>OUR SERVICES</Text>
           <SimpleGrid columns={[1, 2, 3]} spacing={4} mt={"2em"}>
-
             {cardServices.map((service) => (
                 <Card bgColor={"#fff"} p={"3em"} maxW='sm' borderRadius={"0px"}>
                     <HStack spacing={"3"}>
                         <Image src={service.image} alt="handshake-img" />
                         <Text color={"#3A3A3A"} fontWeight={"700"}>{service.title}</Text>
                     </HStack>
-                    <Text color={"#3A3A3A"} fontWeight={"400"} fontSize={'14PX'}>{service.content}</Text>
+                    <Text color={"#3A3A3A"} fontWeight={"400"} fontSize={'14px'}>{service.content}</Text>
                 </Card>
             ))}
             </SimpleGrid>
-            
         </Wrapper>
+      </Box>
 
+      <Box height={"350px"} bgColor={"#292929"}>
+            <Wrapper>
+              <Text fontSize={"18px"} textAlign={"center"} fontWeight={"400"} p={"4em"} color={"#fff"}>AaraHomes Real Estate was founded by a highly experienced group of realtors in Nigeria, specializing in all aspects of the real estate business. With over two years of combined experience, extensive knowledge of both the Nigerian and international markets, and superior negotiation training, AaraHomes is the ideal choice to represent you in all your real estate transactions.
+
+              We are an organized team dedicated to delivering the highest quality of service, using our expertise and deep understanding of each area as well as our clients' unique needs. Our primary focus is on enhancing the customer journey through day-to-day management, with services tailored to each client. We commit our attention to helping thousands of clients realize their goals, from homeownership and business setups to maximizing returns on investment.
+              </Text>
+            </Wrapper>
       </Box>
 
       {/* Footer section */}

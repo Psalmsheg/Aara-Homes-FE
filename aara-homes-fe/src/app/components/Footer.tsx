@@ -12,7 +12,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
   
   return (
-    <Box mb={"4em"} bgColor={"#0F0F0F"}>
+    <Box  bgColor={"#0F0F0F"} >
         <Wrapper>
           <Flex justifyContent={"space-between"} mt={"4em"} borderBottom={"1px solid #CCA01D"}>
             <Box mb={"3em"}>
